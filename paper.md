@@ -55,7 +55,7 @@ This project builds upon these foundations, addressing both content and technica
 
 The technical aspect of our project focused on providing a way to use an existing maSMP to (pre)fill a questionnaire in SMW and also vice versa to generate a maSMP from existing questionnaire and publish it, e.g. in a GitHub repository (attach it to the research software project). In order to do that, we used the mapping between the ontology and the SMP knowledge model to create an SMP Importer and SMP Document Template. For the publishing of an SMP, a submission service has been developed.
 
-// TODO: figure with the inputs/outputs around SMW
+// TODO: Marek - figure with the inputs/outputs around SMW
 
 ## SMP Importer
 
@@ -69,7 +69,7 @@ We developed such an importer for maSMPs in RDF, more specifically in JSON-LD. O
 
 Upon the action, the file is loaded and processed on the backend (in Python, via AJAX), and a set of replies is sent back to the questionnaire in SMW where the user can review what is being imported and accept it or reject it. The backend has two main tasks. First, it gets the RDF/JSON-LD contents from the desired resource (e.g. from file, downloads from URL, or tries to fetch from GitHub via API). Second, it encodes the mapping and translated from RDF/JSON-LD to questionnaire replies; more specifically to instructions what should be pushed back to SMW. When this is done, the result is returned to the frontend/JavaScript which sends it back through the SDK to SMW (and closes the importer window).
 
-// TODO: Marek - figure of the importer
+![Options of SMP Importer](./figures/smp-importer.png)
 
 The SMP Importer is publicly available on GitHub under Apache-2.0 license and is ready for use as well as further enhancements in the future. Here again, it can be extended in terms of mapping (change of SMP questions, new information in SMPs, etc.) as well as supported ways how to get maSMPs or their supported formats.
 
@@ -77,7 +77,7 @@ The SMP Importer is publicly available on GitHub under Apache-2.0 license and is
 
 // TODO: Vojtěch - what is the document template in general, how it was developed in this context, what is the result (where it is available), next steps
 
-// TODO: figure of document template editor / resulting document
+![Preview of maSMP in SMW](./figures/smp-document.png)
 
 ## GitHub Submission Service
 
@@ -94,13 +94,15 @@ For the service to work and be able to create PRs, we created a [`sm-wizard-bot`
 7. Service submits a PR to the original repository with title and message informing that it is an update submitted from SMW.
 8. User gets back the URL of the PR in GitHub and it is stored next to the document in SMW.
 
-// TODO: Marek - figure of submission
+![Selection of submission service for SMP](./figures/smp-submission.png)
 
 This service has been successfully tested in both create and update use cases. There is no need to encode the mapping in the service as that is handled already in the document template. The only thing that is needed from the incoming JSON-LD file is presence of a triple with `schema:codeRepository` property. Then, it is tested whether the URL is actually a GitHub.com repository. It works with public repositories but can work also with private to which the `sm-wizard-bot` has access.
 
-// TODO: Marek - figure of the PR
+![GitHub Pull Request (PR) created by SMW bot](./figures/smp-github-pr.png)
 
 As for possible future enhancements, the service can be extended to support also other than GitHub.com repositories (e.g. GitLab or BitBucket, but also GitHub Enterprise or self-hosted GitLab EE). For GitHub, it might be better to create a different mechanism for private repositories, but that would require users to enable the app for the repository; however, the question on code repository is currently following the question whether it is a public repository. Finally, a cleanup mechanism to clean forks for closed or old PRs might be needed in the future. 
+
+![Result received from submission service to SMW](./figures/smp-submission-ok.png)
 
 # Conclusions and Future Steps
 
