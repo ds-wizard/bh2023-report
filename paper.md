@@ -75,9 +75,15 @@ The SMP Importer is publicly available on GitHub under Apache-2.0 license and is
 
 ## SMP Document Template
 
-// TODO: Vojtěch - what is the document template in general, how it was developed in this context, what is the result (where it is available), next steps
+In order to update the research software metadata in a GitHub repository, it is necessary to convert the questionnaire back into the format compatible with SMP Importer. The DSW provides a solution through the creation of a Document Template that covers the mapping process. Technically, the Document Template is implemented as a Jinja template. The DSW provides to the Document Template a context containing the Knowledge Model, questionnaire, and questionnaire responses.
+
+Users are granted the flexibility to choose their preferred output format (such as HTML, JSON, RDF, etc.), and they can define the specific structure of the Document Template using Jinja. Subsequently, DSW utilizes this Document Template to generate the appropriate document, tailored to the chosen format.
+
+We developed such [a document template](https://github.com/ds-wizard/masmp-template) for research software metadata. This template generates a JSON-LD output that can be placed to the GitHub Repository. It's important to note that the current version of the document template only encompasses a portion of the Knowledge Model, specifically Chapter 1 and Chapter 6. This is because the mapping process for the remaining parts of the Knowledge Model is still ongoing. Our future efforts will be directed towards completing the mapping for the entire Knowledge Model.
 
 ![Preview of maSMP in SMW](./figures/smp-document.png)
+
+The SMP Document Template is accessible to the public via [GitHub](https://github.com/ds-wizard/masmp-template) and is governed by the Apache-2.0 license. It is readily available for immediate use and can also be expanded upon in the future. It offers flexibility for modifications, such as altering SMP questions or incorporating new information into SMPs.
 
 ## GitHub Submission Service
 
