@@ -18,25 +18,25 @@ authors:
   - name: Renato Alves
     orcid: 0000-0002-7212-0234
     affiliation: 2
-  - name: Eva Martin del Pico
-    orcid: 0000-0001-8324-2897
-    affiliation: 3
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
-    affiliation: 4    
+    affiliation: 3    
+  - name: Eva Martin del Pico
+    orcid: 0000-0001-8324-2897
+    affiliation: 4   
 affiliations:
   - name: Faculty of Information Technology, Czech Technical University in Prague
     index: 1
   - name: European Bioinformatics Institute (EMBL-EBI)
     index: 2
-  - name: Barcelona Supercomputing Center (BSC)
-    index: 3
   - name: ZB MED Information Centre for Life Sciences
+    index: 3    
+  - name: Barcelona Supercomputing Center (BSC)
     index: 4    
 date: 3 November 2023
 bibliography: paper.bib
 group: \#8 SMW + maSMPs
-authors_short: M. Suchánek, V. Knaisl, R. Alves, and E. Martin del Pico
+authors_short: M. Suchánek, V. Knaisl, R. Alves, LJ. Castro, and E. Martin del Pico,
 git_url: https://github.com/ds-wizard/bh2023-report
 event: BH2023
 ---
@@ -47,7 +47,7 @@ This report provides an overview of our activities and accomplishments concernin
 
 # Introduction
 
-In recent years, the management of research software has garnered increasing attention across various domains. This heightened interest has given rise to a myriad of approaches and services aimed at addressing the unique challenges of this crucial aspect of scientific research. Notable developments in this landscape include initiatives like [Codemeta](https://codemeta.github.io/) [@jones_codemeta_2016], [Software Heritage](https://www.softwareheritage.org/), the introduction of [machine-actionable Software Management Plans (maSMPs)](https://zbmed-semtec.github.io/maSMPs/) [@giraldo_machine-actionable_2023], and the proliferation of best practices and templates within research infrastructures.
+In recent years, the management of research software has garnered increasing attention across various domains. This heightened interest has given rise to a myriad of approaches and services aimed at addressing the unique challenges of this crucial aspect of scientific research. Notable developments in this landscape include initiatives like [Codemeta](https://codemeta.github.io/) [@jones_codemeta_2016], [Software Heritage](https://www.softwareheritage.org/), the introduction of [machine-actionable Software Management Plans (maSMPs)](https://zbmed-semtec.github.io/maSMPs/) [@masmpOntology], and the proliferation of best practices and templates within research infrastructures.
 
 ELIXIR has recognized the importance of proper software management and the adoption of SMPs to facilitate reproducibility and sustainability in research. To further these objectives, ELIXIR established its Software Best Practices group, which has been diligently working on creating an SMP template. This template serves as a foundation for structuring software management plans and streamlining the process of their creation. A significant milestone in this endeavor was the encoding of this SMP template as a knowledge model within the [Data Stewardship Wizard (DSW)](https://ds-wizard.org) platform [@dswPaper]. This transformation resulted in the creation of the Software Management Wizard (SMW), a user-friendly tool that empowers the research community to readily engage with SMPs and enhance their software management practices.
 
@@ -81,10 +81,10 @@ Despite the substantial updates made to the knowledge model during the BioHackat
 
 By addressing these areas, maSMPs can further solidify their utility, align with established standards, and contribute to a more seamless integration within the broader landscape of machine-readable software metadata. These steps will not only enhance the comprehensiveness of the knowledge model but also promote its broader adoption and usability in diverse research and software development contexts.
 
-SMPs are similar to Data Management Plans (DMPs) as they aim at faciliating the management of research- and software-related aspects corresponding to the software lifecycle. They do not intend to support or replace software project management but complement it. In recent years, this topic has gained more attention as research software is more and more recognized by the research community as a research outcome core to research reproducibility. For instance, the Software Best Practices Focus Group, part of the ELIXIR Tools Platform, proposed an SMP [@alves_elixir_2021] mainly targeting researchers who develop software. Although directe to Life Science researchers, hanks to its domain-agnostic approach, it could also be used by researchers in other domains and by Research Software Engineers. The Netherlands
+SMPs are similar to Data Management Plans (DMPs) as they aim at faciliating the management of research- and software-related aspects corresponding to the software lifecycle. They do not intend to support or replace software project management but complement it. In recent years, this topic has gained more attention as research software is more and more recognized by the research community as a research outcome core to research reproducibility. For instance, the Software Best Practices Focus Group, part of the ELIXIR Tools Platform, proposed an SMP [@elixirSMP] mainly targeting researchers who develop software. Although directe to Life Science researchers, hanks to its domain-agnostic approach, it could also be used by researchers in other domains and by Research Software Engineers. The Netherlands
 eScience Center  and the Max Plank Digital Library (MPDL) also provide domain-agnostic SMPs including maturity-like software levels so researchers can decide which one applies to their project [@martinez-ortiz_practical_2022,@grossmann_sustainable_2023]. 
 
-maSMPs aim at providing a machine-actionable layer on top of SMPs enriched with semantically structured metadata. A maSMP metadata schema, based on schema.org, was created from the ELIXIR SMPs [@giraldo_machine-actionable_2023,@giraldo_metadata_2023] and later aligned to the eScience and MPDL ones [@giraldo_workshop_2023,@castro_five_2023]. While the initial versions of the maSMP metadata schema focused on the software elements (i.e, software source code and software releases), the [latest version 2.1.0](https://discovery.biothings.io/ns/maSMP) also includes the actual management plan and the option to link questions to expected metadata that should be present by the end of the project.
+maSMPs aim at providing a machine-actionable layer on top of SMPs enriched with semantically structured metadata. A maSMP metadata schema, based on schema.org, was created from the ELIXIR SMPs [@masmpOntology,@giraldo_metadata_2023] and later aligned to the eScience and MPDL ones [@giraldo_workshop_2023,@castro_five_2023]. While the initial versions of the maSMP metadata schema focused on the software elements (i.e, software source code and software releases), the [latest version 2.1.0](https://discovery.biothings.io/ns/maSMP) also includes the actual management plan and the option to link questions to expected metadata that should be present by the end of the project.
 
 # SM Wizard Enhancements
 
