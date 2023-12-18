@@ -55,7 +55,31 @@ This project builds upon these foundations, addressing both content and technica
 
 # ELIXIR SMPs, maSMPs, and SMW
 
-// TODO: Eva+Renato - describe what is it about, how it works, the ontology, work done on the mapping, challenges, suggestions for the ontology
+The ELIXIR Software Best Practices group (under the Tools Platform) aims to improve the quality and sustainability of Life Science research software. Among the goals is to consolidate software management planning, provide relevant training/guidance, and other means to enable adoption of software development best practices. Over the years, the group developed a template for SMPs which has been later on turned into a knowledge model for DSW, resulting in the Software Management Wizard (SMW). Inspired by other relevant activities in the field of machine-actionable DMPs and SMPs, the group has been focusing machine-actionable SMPs in the recent period.
+
+## Existing Mapping
+
+In prior workshops, the knowledge model (KM) and its associated queries were meticulously aligned with various ontologies, including ELIXIR SMP [@elixirSMP], [RDMO SMP](https://rdm.mpdl.mpg.de/2022/12/09/smp-template-available/), maSMP Ontology [@masmpOntology], Bioschemas ([Computational Tool Profile](https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE)), and [CodeMeta](https://codemeta.github.io/). This mapping process involved linking 30 KM questions to specific properties, predominantly drawing from the groundwork laid by ELIXIR SMP [@elixirSMP]. For instance, it revealed that the property `discussionURL` could aptly address the question *Do you state how to report bugs and/or usability problems by the software user/s?*.
+
+Building upon this foundational mapping, an expanded effort was undertaken to map all KM questions and explore potential machine-actionable representations of corresponding responses. In this endeavor, 56 KM questions were scrutinized, leading to the identification of 47 properties sourced from [schema.org](https://schema.org), [bioschemas.org](https://bioschemas.org), maSMP Ontology [@masmpOntology], and [NCI Thesaurus (NCIt)](https://ncit.nci.nih.gov/ncitbrowser/). This comprehensive mapping initiative marks a significant stride towards enhancing the interoperability and semantic richness of the KM.
+
+## Aligning Knowledge Model
+
+During the reevaluation of the mapping process, the knowledge model underwent iterative refinement through collaborative discussions within a broader group. Notably, improvements were made to the formulation of certain questions, exemplified by the adoption of a *list question* approach. This departure from requiring a list of items in a single field, presented as a string with commas, contributes to a more user-friendly and versatile design.
+
+The collaborative discussions also served as a platform for addressing additional issues that emerged, sparking further enhancements to the knowledge model. An instance of such refinement involved diversifying the available versioning schemes. Initially, the questions exclusively endorsed [Semantic Versioning (SemVer)](https://semver.org), overlooking alternative and often more fitting schemes such as [Calendar Versioning (CalVer)](https://calver.org/). This realization prompted a broader consideration of versioning practices, enriching the knowledge model's adaptability to diverse development scenarios and preferences.
+
+## Suggestions for maDMPs
+
+Despite the substantial updates made to the knowledge model during the BioHackathon, there remain several crucial steps yet to be taken for the continuous enhancement of maSMPs. Notably, the following suggestions have been identified as key areas for improvement:
+
+1. **Alignment with CodeMeta**: A priority lies in aligning maSMPs more closely with [CodeMeta](https://codemeta.github.io/), a widely adopted standard for machine-readable (research) software metadata. This alignment ensures a seamless integration of maSMPs into the broader ecosystem of machine-readable software metadata, fostering interoperability and standardized representation.
+
+2. **Contributor Alignment with CITATION.cff**: To streamline the contribution process, aligning maSMPs with [CITATION.cff](https://citation-file-format.github.io/) is recommended. Given the widespread usage of CITATION.cff, this alignment facilitates a more standardized and widely accepted approach to acknowledging contributors, thus enhancing the overall transparency and attribution of contributions.
+
+3. **Enhancement of Questions and Machine-Actionability**: A targeted effort should be directed towards improving the questions within maSMPs, particularly in areas such as documentation, versioning, requirements, and dependencies. This involves refining the machine-actionability of these aspects to ensure that responses can be effectively processed and utilized in automated workflows, promoting a more efficient and reliable exchange of software-related information.
+
+By addressing these areas, maSMPs can further solidify their utility, align with established standards, and contribute to a more seamless integration within the broader landscape of machine-readable software metadata. These steps will not only enhance the comprehensiveness of the knowledge model but also promote its broader adoption and usability in diverse research and software development contexts.
 
 SMPs are similar to Data Management Plans (DMPs) as they aim at faciliating the management of research- and software-related aspects corresponding to the software lifecycle. They do not intend to support or replace software project management but complement it. In recent years, this topic has gained more attention as research software is more and more recognized by the research community as a research outcome core to research reproducibility. For instance, the Software Best Practices Focus Group, part of the ELIXIR Tools Platform, proposed an SMP [@alves_elixir_2021] mainly targeting researchers who develop software. Although directe to Life Science researchers, hanks to its domain-agnostic approach, it could also be used by researchers in other domains and by Research Software Engineers. The Netherlands
 eScience Center  and the Max Plank Digital Library (MPDL) also provide domain-agnostic SMPs including maturity-like software levels so researchers can decide which one applies to their project [@martinez-ortiz_practical_2022,@grossmann_sustainable_2023]. 
@@ -66,7 +90,7 @@ maSMPs aim at providing a machine-actionable layer on top of SMPs enriched with 
 
 The technical aspect of our project focused on providing a way to use an existing maSMP to (pre)fill a questionnaire in SMW and also vice versa to generate a maSMP from existing questionnaire and publish it, e.g. in a GitHub repository (attach it to the research software project). In order to do that, we used the mapping between the ontology and the SMP knowledge model to create an SMP Importer and SMP Document Template. For the publishing of an SMP, a submission service has been developed.
 
-// TODO: Marek - figure with the inputs/outputs around SMW
+![Diagram of SMW Imports and Exports](./figures/smw-diagram.png)
 
 ## SMP Importer
 
@@ -123,7 +147,11 @@ As for possible future enhancements, the service can be extended to support also
 
 # Conclusions and Future Steps
 
-// TODO: when all parts done
+In conclusion, the collaborative efforts undertaken during BioHackathon Europe 2023 have propelled substantial advancements in the pursuit of machine-actionable SMPs, not only within the ELIXIR framework but also extending their applicability beyond. The dedicated work accomplished during the event has resulted in a robust technical solution for seamlessly integrating SMPs with actual research software projects, marking a significant stride towards practical implementation.
+
+Furthermore, the BioHackathon served as a catalyst for the ongoing development of SMPs. The improvements made during the event lay a solid foundation for their continuous enhancement and refinement, ensuring their relevance and effectiveness in addressing the evolving needs of the scientific and research community.
+
+As we look to the future, the outlined roadmap emphasizes the crucial aspect of aligning SMPs with widely used metadata standards for research software projects. This strategic alignment is envisioned as a pivotal step towards fostering interoperability, standardization, and broader acceptance within the larger research ecosystem. The collaborative spirit and technical solutions generated during BioHackathon Europe 2023 set a promising trajectory for the continued evolution and impactful integration of machine-actionable SMPs, contributing significantly to the advancement of research software practices.
 
 # Acknowledgements
 
