@@ -20,19 +20,19 @@ authors:
     affiliation: 2
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
-    affiliation: 3    
+    affiliation: 3
   - name: Eva Martin del Pico
     orcid: 0000-0001-8324-2897
-    affiliation: 4   
+    affiliation: 4
 affiliations:
   - name: Faculty of Information Technology, Czech Technical University in Prague
     index: 1
-  - name: European Bioinformatics Institute (EMBL-EBI)
+  - name: European Molecular Biology Laboratory (EMBL)
     index: 2
   - name: ZB MED Information Centre for Life Sciences
-    index: 3    
+    index: 3
   - name: Barcelona Supercomputing Center (BSC)
-    index: 4    
+    index: 4
 date: 3 November 2023
 bibliography: paper.bib
 group: \#8 SMW + maSMPs
