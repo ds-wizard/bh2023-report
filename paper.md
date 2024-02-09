@@ -51,11 +51,11 @@ In recent years, the management of research software has garnered increasing att
 
 ELIXIR has recognized the importance of proper software management and the adoption of SMPs to facilitate reproducibility and sustainability in research. To further these objectives, ELIXIR established its Software Best Practices group, which has been diligently working on creating an SMP template. This template serves as a foundation for structuring software management plans and streamlining the process of their creation. A significant milestone in this endeavor was the encoding of this SMP template as a knowledge model within the [Data Stewardship Wizard (DSW)][ds-wizard] platform [@dswPaper]. This transformation resulted in the creation of the Software Management Wizard (SMW), a user-friendly tool that empowers the research community to readily engage with SMPs and enhance their software management practices.
 
-This project builds upon these foundations, addressing both content and technical aspects. It involves refining the SMP template by improving its structure, questions, and machine-actionability. Additionally, the project aims to align the template with pertinent ontologies and metadata schemas to ensure seamless interoperability and adherence to recognized standards. Simultaneously, the technical aspects of efficiently composing and utilizing SMPs are being enhanced, further bolstering the capabilities of the research community in their software management endeavors. Through these combined efforts, this project seeks to foster greater transparency, reproducibility, and efficiency in research software management within the ELIXIR community and beyond.
+This project builds upon these foundations, addressing both content and technical aspects. It assists the process of refining the SMP template by improving its structure, questions, and machine-actionability. Additionally, the project aims to align the template with pertinent ontologies and metadata schemas to ensure seamless interoperability and adherence to recognized standards. Simultaneously, the technical aspects of efficiently composing and utilizing SMPs are being enhanced, further bolstering the capabilities of the research community in their software management endeavors. Through these combined efforts, this project seeks to foster greater transparency, reproducibility, and efficiency in research software management within the ELIXIR community and beyond.
 
 # ELIXIR SMPs, maSMPs, and SMW
 
-The ELIXIR Software Best Practices group (under the Tools Platform) aims to improve the quality and sustainability of Life Science research software. Among the goals is to consolidate software management planning, provide relevant training/guidance, and other means to enable adoption of software development best practices. Over the years, the group developed a template for SMPs which has been later on turned into a knowledge model for DSW, resulting in the Software Management Wizard (SMW). Inspired by other relevant activities in the field of machine-actionable DMPs and SMPs, the group has been focusing machine-actionable SMPs in the recent period.
+The ELIXIR Software Best Practices group (under the [Tools Platform][elixir-tools-platform]) aims to improve the quality and sustainability of Life Science research software. One of the goals is to consolidate software management planning, provide relevant training/guidance, and other means to enable adoption of software development best practices. Over the years, the group developed a template for SMPs which has been later on turned into a knowledge model for DSW, resulting in the Software Management Wizard (SMW). Drawing inspiration from other efforts and working towards a better integration and interoperability between different platforms, the group has been prioritizing machine-actionable SMPs.
 
 ## Existing Mapping
 
@@ -65,15 +65,17 @@ Building upon this foundational mapping, an expanded effort was undertaken to ma
 
 ## Aligning Knowledge Model
 
-During the reevaluation of the mapping process, the knowledge model underwent iterative refinement through collaborative discussions within a broader group. Notably, improvements were made to the formulation of certain questions, exemplified by the adoption of a *list question* approach. This departure from requiring a list of items in a single field, presented as a string with commas, contributes to a more user-friendly and versatile design.
+During the reevaluation of the mapping process, the knowledge model underwent iterative refinement through collaborative discussions within a broader group. Notably, improvements were made to the formulation of certain questions, exemplified by the adoption of a *list question* structure, as opposed to a single-field of items separated with commas. This decision has led to a design that is more user-friendly and versatile, while also reducing the likelihood of input errors.
 
-The collaborative discussions also served as a platform for addressing additional issues that emerged, sparking further enhancements to the knowledge model. An instance of such refinement involved diversifying the available versioning schemes. Initially, the questions exclusively endorsed [Semantic Versioning (SemVer)][semver], overlooking alternative and often more fitting schemes such as [Calendar Versioning (CalVer)][calver]. This realization prompted a broader consideration of versioning practices, enriching the knowledge model's adaptability to diverse development scenarios and preferences.
+The collaborative discussions also served as a platform for addressing additional issues that emerged, sparking further enhancements to the knowledge model. An instance of such refinement involved diversifying the available versioning schemes.
 
-## Suggestions for maDMPs
+The collaborative discussions also served as a platform to address other issues, which led to further improvements in the knowledge model. One specific improvement was the expansion of choices for versioning schemes. Initially, the questions exclusively favoured [Semantic Versioning (SemVer)][semver], overlooking alternative and often more fitting schemes such as [Calendar Versioning (CalVer)][calver]. This realization prompted a broader consideration of versioning practices, enriching the knowledge model's adaptability to diverse development scenarios and preferences.
+
+## Suggestions for maSMPs
 
 Despite the substantial updates made to the knowledge model during the BioHackathon, there remain several crucial steps yet to be taken for the continuous enhancement of maSMPs. Notably, the following suggestions have been identified as key areas for improvement:
 
-1. **Alignment with CodeMeta**: A priority lies in aligning maSMPs more closely with [CodeMeta][codemeta], a widely adopted standard for machine-readable (research) software metadata. This alignment ensures a seamless integration of maSMPs into the broader ecosystem of machine-readable software metadata, fostering interoperability and standardized representation.
+1. **Alignment with CodeMeta**: A priority lies in aligning maSMPs more closely with [CodeMeta][codemeta], a widely adopted standard for machine-readable (research) software metadata. This alignment ensures a seamless integration of maSMPs into the broader ecosystem of machine-readable software metadata, avoiding a proliferation of different formats and fostering interoperability and standardized representation.
 
 2. **Contributor Alignment with CITATION.cff**: To streamline the contribution process, aligning maSMPs with [CITATION.cff][cff] is recommended. Given the widespread usage of CITATION.cff, this alignment facilitates a more standardized and widely accepted approach to acknowledging contributors, thus enhancing the overall transparency and attribution of contributions.
 
@@ -81,20 +83,19 @@ Despite the substantial updates made to the knowledge model during the BioHackat
 
 By addressing these areas, maSMPs can further solidify their utility, align with established standards, and contribute to a more seamless integration within the broader landscape of machine-readable software metadata. These steps will not only enhance the comprehensiveness of the knowledge model but also promote its broader adoption and usability in diverse research and software development contexts.
 
-SMPs are similar to Data Management Plans (DMPs) as they aim at faciliating the management of research- and software-related aspects corresponding to the software lifecycle. They do not intend to support or replace software project management but complement it. In recent years, this topic has gained more attention as research software is more and more recognized by the research community as a research outcome core to research reproducibility. For instance, the Software Best Practices Focus Group, part of the ELIXIR Tools Platform, proposed an SMP [@elixirSMP] mainly targeting researchers who develop software. Although directe to Life Science researchers, hanks to its domain-agnostic approach, it could also be used by researchers in other domains and by Research Software Engineers. The Netherlands
-eScience Center  and the Max Plank Digital Library (MPDL) also provide domain-agnostic SMPs including maturity-like software levels so researchers can decide which one applies to their project [@martinez-ortiz_practical_2022,@grossmann_sustainable_2023]. 
+SMPs are similar to Data Management Plans (DMPs) as they aim at facilitating the management of research- and software-related aspects corresponding to the software lifecycle. They do not intend replace software project management but complement it. In recent years, this topic has gained more attention as research software is more and more recognized by the research community as a research output and critical to research reproducibility. For instance, the Software Best Practices Focus Group, part of the ELIXIR Tools Platform, proposed an SMP [@elixirSMP] mainly targeting researchers who develop software. Although directed at Life Science researchers, thanks to its domain-agnostic approach, it could also be used by researchers in other domains and by Research Software Engineers. The Netherlands *eScience Center* and the *Max Plank Digital Library* (MPDL) also provide domain-agnostic SMPs that include maturity-like software levels so researchers can decide which one applies to their project [@martinez-ortiz_practical_2022,@grossmann_sustainable_2023].
 
 maSMPs aim at providing a machine-actionable layer on top of SMPs enriched with semantically structured metadata. A maSMP metadata schema, based on schema.org, was created from the ELIXIR SMPs [@masmpOntology,@giraldo_metadata_2023] and later aligned to the eScience and MPDL ones [@giraldo_workshop_2023,@castro_five_2023]. While the initial versions of the maSMP metadata schema focused on the software elements (i.e, software source code and software releases), the [latest version 2.1.0][masmp210] also includes the actual management plan and the option to link questions to expected metadata that should be present by the end of the project.
 
 # SM Wizard Enhancements
 
-The technical aspect of our project focused on providing a way to use an existing maSMP to (pre)fill a questionnaire in SMW and also vice versa to generate a maSMP from existing questionnaire and publish it, e.g. in a GitHub repository (attach it to the research software project). In order to do that, we used the mapping between the ontology and the SMP knowledge model to create an SMP Importer and SMP Document Template. For the publishing of an SMP, a submission service has been developed.
+The technical aspect of our project focused on providing a way to use an existing maSMP to (pre)fill a questionnaire in SMW and also vice versa, to generate a maSMP from an existing questionnaire and publish it, e.g. in a GitHub repository - adding it to the research software project. In order to do this, we used the mapping between the ontology and the SMP knowledge model to create an SMP Importer and SMP Document Template (exporter). For the publishing of an SMP, a submission service was also developed.
 
 ![Diagram of SMW Imports and Exports](./figures/smw-diagram.png)
 
 ## SMP Importer
 
-DSW offers so-called *project importers*, a configured external service that opens as a pop-up child window from a questionnaire, gets basic information about the project, user can interact with the window in any way (e.g. select something, upload file, fill a form), and finally it returns back a set of replies back to the questionnaire and closes. In technical view, it is implemented through the [DSW Importer SDK][dsw-importer], a JavaScript library; however, the service can also have its own backend and further integrations. In this way, it provides high level of flexibility in matter of getting multiple replies from basically any source to DSW.
+DSW offers so-called *project importers*, a configured external service that opens as a pop-up child window from a questionnaire. The window can be customized to request relevant information through a form or upload a file. The service then retrieves basic information about the project using the information provided. Finally a set of replies are returned to the questionnaire closing the window. In technical view, it is implemented through the [DSW Importer SDK][dsw-importer], a JavaScript library; however, the service can also have its own backend and further integrations. In this way, it provides high level of flexibility to obtain multiple replies from basically any source to DSW.
 
 We developed such an importer for maSMPs in RDF, more specifically in JSON-LD. Once the importer window opens, the user can provide maSMP in three ways:
 
@@ -102,11 +103,11 @@ We developed such an importer for maSMPs in RDF, more specifically in JSON-LD. O
 - provide a URL to the file,
 - fill owner, repo name, and file path in case of public GitHub repository.
 
-Upon the action, the file is loaded and processed on the backend (in Python, via AJAX), and a set of replies is sent back to the questionnaire in SMW where the user can review what is being imported and accept it or reject it. The backend has two main tasks. First, it gets the RDF/JSON-LD contents from the desired resource (e.g. from file, downloads from URL, or tries to fetch from GitHub via API). Second, it encodes the mapping and translated from RDF/JSON-LD to questionnaire replies; more specifically to instructions what should be pushed back to SMW. When this is done, the result is returned to the frontend/JavaScript which sends it back through the SDK to SMW (and closes the importer window).
+After choosing the course of action, the file is loaded and processed on the backend (in Python, via AJAX), and a set of replies is sent back to the questionnaire in SMW where the user can review what is being imported and accept it or reject it. The backend has two main tasks. First, it gets the RDF/JSON-LD contents from the desired resource (e.g. from file, downloads from URL, or tries to fetch from GitHub via API). Second, it encodes the mapping and translates from RDF/JSON-LD to questionnaire replies; more specifically to instructions that should be pushed back to SMW. When this is done, the result is returned to the frontend/JavaScript which sends it back through the SDK to SMW (and closes the importer window).
 
 ![Options of SMP Importer](./figures/smp-importer.png)
 
-The SMP Importer is publicly available on GitHub under Apache-2.0 license and is ready for use as well as further enhancements in the future. Here again, it can be extended in terms of mapping (change of SMP questions, new information in SMPs, etc.) as well as supported ways how to get maSMPs or their supported formats.
+The SMP Importer is publicly available on GitHub under the Apache-2.0 license and is ready for use. It's implementation also allows for an expansion of in terms of mapping (change of SMP questions, new information in SMPs, etc.) as well as supported ways on how to retrieve maSMPs or their supported formats.
 
 ## SMP Document Template
 
@@ -122,36 +123,38 @@ The SMP Document Template is accessible to the public [via GitHub][smp-template]
 
 ## GitHub Submission Service
 
-To complete the "loop" for updating research software metadata in a GitHub repository through SMW, we developed a *submission service*. Such services in DSW allows to accept a submitted document, process it in any way, and eventually return a relevant URL back to DSW. The goal was to enable maSMP created with the previously described document template to be suggested in target GitHub repository as a Pull Request (PR).
+To complete the "loop" for updating research software metadata in a GitHub repository through SMW, we developed a *submission service*. Such services in DSW allow to accept a submitted document, process it in any way, and eventually return a relevant URL back to DSW. The goal was to enable maSMP created with the previously described document template to be added to a GitHub repository through a Pull Request (PR).
 
-For the service to work and be able to create PRs, we created a [`sm-wizard-bot`][sm-wizard-bot] account on GitHub that is the one creating forks and PRs through API (authenticated using an access token). We had to deal with various potential obstacles such as asynchronnous creation of forks via GitHub API or possibility of need of multiple forks with the same original repository name. The achieved flow with the service works as follows:
+For the service to work and be able to create PRs, we created a [`sm-wizard-bot`][sm-wizard-bot] account on GitHub that is responsible for creating forks and PRs through its API (authenticated using an access token). We had to deal with various potential obstacles such as asynchronnous creation of forks via GitHub API and the possible need or existence of multiple forks of the same original repository. The achieved flow with the service works as follows:
 
 1. User generates a maSMP document in DSW.
 2. User submits the (JSON-LD) document in DSW (clicks a Submit button and selects the configured service).
 3. Service accepts the (JSON-LD) document and verifies the request.
 4. Service extracts the GitHub repository URLs (if not present, it reports an error).
-5. Service creates a fork via GitHub API (but with a name that contains also a timestamp) and then waits until the fork is being created (may take several seconds, up to minutes for larger repositories).
+5. Service creates a fork via GitHub API (but with a name that contains also a timestamp) and then waits until the fork is created (may take several seconds, up to minutes for larger repositories).
 6. Service creates (or updates) the `metadata.json` JSON-LD file in the repository and commits the changes via GitHub API.
 7. Service submits a PR to the original repository with title and message informing that it is an update submitted from SMW.
 8. User gets back the URL of the PR in GitHub and it is stored next to the document in SMW.
 
 ![Selection of submission service for SMP](./figures/smp-submission.png)
 
-This service has been successfully tested in both create and update use cases. There is no need to encode the mapping in the service as that is handled already in the document template. The only thing that is needed from the incoming JSON-LD file is presence of a triple with `schema:codeRepository` property. Then, it is tested whether the URL is actually a GitHub.com repository. It works with public repositories but can work also with private to which the `sm-wizard-bot` has access.
+This service has been successfully tested in both create and update use cases. There is no need to encode the mapping in the service as this is already handled by the document template. The only requirement from the incoming JSON-LD file is the presence of a triple with `schema:codeRepository` property. Then, it tests whether the URL is actually a GitHub.com repository. It works with public repositories but can also work with private if the `sm-wizard-bot` is granted access.
 
 ![GitHub Pull Request (PR) created by SMW bot](./figures/smp-github-pr.png)
 
-As for possible future enhancements, the service can be extended to support also other than GitHub.com repositories (e.g. GitLab or BitBucket, but also GitHub Enterprise or self-hosted GitLab EE). For GitHub, it might be better to create a different mechanism for private repositories, but that would require users to enable the app for the repository; however, the question on code repository is currently following the question whether it is a public repository. Finally, a cleanup mechanism to clean forks for closed or old PRs might be needed in the future. 
+As for possible future enhancements, the service can be extended to support platforms other than GitHub.com (e.g. GitLab or BitBucket, but also GitHub Enterprise or self-hosted GitLab EE). A more versatile mechanism to handle private repositories on GitHub can also be implemented. This will require users to allow the app to integrate with their repository. Finally, a cleanup mechanism to remove forks for closed or old PRs might be needed in the future.
 
 ![Result received from submission service to SMW](./figures/smp-submission-ok.png)
 
 # Conclusions and Future Steps
 
-In conclusion, the collaborative efforts undertaken during BioHackathon Europe 2023 have propelled substantial advancements in the pursuit of machine-actionable SMPs, not only within the ELIXIR framework but also extending their applicability beyond. The dedicated work accomplished during the event has resulted in a robust technical solution for seamlessly integrating SMPs with actual research software projects, marking a significant stride towards practical implementation.
+
+In conclusion, the collaborative work carried out during BioHackathon Europe 2023 has led to significant progress in the development of machine-actionable SMPs, not only within the ELIXIR framework but also extending their applicability beyond. The efforts put forward during the event have resulted in a robust technical solution for seamlessly integrating SMPs with existing research software projects, marking a significant stride towards practical implementation.
 
 Furthermore, the BioHackathon served as a catalyst for the ongoing development of SMPs. The improvements made during the event lay a solid foundation for their continuous enhancement and refinement, ensuring their relevance and effectiveness in addressing the evolving needs of the scientific and research community.
 
-As we look to the future, the outlined roadmap emphasizes the crucial aspect of aligning SMPs with widely used metadata standards for research software projects. This strategic alignment is envisioned as a pivotal step towards fostering interoperability, standardization, and broader acceptance within the larger research ecosystem. The collaborative spirit and technical solutions generated during BioHackathon Europe 2023 set a promising trajectory for the continued evolution and impactful integration of machine-actionable SMPs, contributing significantly to the advancement of research software practices.
+In the future, it's important to make sure that SMPs are aligned with commonly used metadata standards for research software projects. This alignment is seen as a crucial step towards making SMPs work well together, be more standardized, and accepted by the wider research community. The collaborative and technical solutions that came out of BioHackathon Europe 2023 give us hope for the continued improvement and meaningful integration of SMPs, which will have a big impact on research software practices.
+
 
 # Acknowledgements
 
@@ -167,6 +170,7 @@ This work was done during the [BioHackathon Europe][biohackeurope] 2023 organize
 [comptool-bschema]: https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE
 [ds-wizard]: https://ds-wizard.org
 [dsw-importer]: https://github.com/ds-wizard/dsw-importer-sdk
+[elixir-tools-platform]: https://elixir-europe.org/platforms/tools
 [fair4rs]: https://www.rd-alliance.org/node/69317/outputs
 [masmp210]: https://discovery.biothings.io/ns/maSMP
 [masmp]: https://zbmed-semtec.github.io/maSMPs/
