@@ -47,7 +47,7 @@ This report provides an overview of our activities and accomplishments concernin
 
 # Introduction
 
-In recent years, the management of research software has garnered increasing attention across various domains. This heightened interest has given rise to a myriad of approaches and services aimed at addressing the unique challenges of this crucial aspect of scientific research. Notable developments in this landscape include initiatives like [Codemeta][codemeta] [@jones_codemeta_2016], [Software Heritage][soft-heritage], the introduction of [machine-actionable Software Management Plans (maSMPs)][masmp] [@masmpOntology], and the proliferation of best practices and templates within research infrastructures.
+In recent years, the management of research software has garnered increasing attention across various domains, motivated in part by concerns about the reproducibility of scientific results [@baker_2016,@stodden_2016]. This heightened interest has given rise to a myriad of approaches and services aimed at addressing the unique challenges of this crucial aspect of scientific research. Notable developments in this landscape include initiatives like [Codemeta][codemeta] [@jones_codemeta_2016], [Software Heritage][soft-heritage], the introduction of [machine-actionable Software Management Plans (maSMPs)][masmp] [@masmpOntology], and the proliferation of best practices and templates within research infrastructures and [libraries][nyu-soft-repro]. Due to the significance of this topic, some countries have established guides and practices at [a national level][nwo-soft-plan].
 
 ELIXIR has recognized the importance of proper software management and the adoption of SMPs to facilitate reproducibility and sustainability in research. To further these objectives, ELIXIR established its Software Best Practices group, which has been diligently working on creating an SMP template. This template serves as a foundation for structuring software management plans and streamlining the process of their creation. A significant milestone in this endeavor was the encoding of this SMP template as a knowledge model within the [Data Stewardship Wizard (DSW)][ds-wizard] platform [@dswPaper]. This transformation resulted in the creation of the Software Management Wizard (SMW), a user-friendly tool that empowers the research community to readily engage with SMPs and enhance their software management practices.
 
@@ -171,6 +171,8 @@ This work was done during the [BioHackathon Europe][biohackeurope] 2023 organize
 [masmp210]: https://discovery.biothings.io/ns/maSMP
 [masmp]: https://zbmed-semtec.github.io/maSMPs/
 [ncit]: https://ncit.nci.nih.gov/ncitbrowser/
+[nyu-soft-repro]: https://guides.nyu.edu/software-reproducibility
+[nwo-soft-plan]: https://www.nwo.nl/en/news/national-guide-research-software-management
 [openebench]: https://openebench.bsc.es
 [rda]: https://www.rd-alliance.org
 [rdmo-smp]: https://rdm.mpdl.mpg.de/2022/12/09/smp-template-available/
