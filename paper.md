@@ -21,22 +21,27 @@ authors:
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
     affiliation: 3
+  - name: Fotis Psomopoulos
+    orcid: 0000-0002-0222-4273
+    affiliation: 4
   - name: Eva Martin del Pico
     orcid: 0000-0001-8324-2897
-    affiliation: 4
+    affiliation: 5
 affiliations:
-  - name: Faculty of Information Technology, Czech Technical University in Prague
+  - name: Czech Technical University in Prague
     index: 1
   - name: European Molecular Biology Laboratory (EMBL)
     index: 2
   - name: ZB MED Information Centre for Life Sciences
     index: 3
-  - name: Barcelona Supercomputing Center (BSC)
+  - name: Institute of Applied Biosciences, CERTH
     index: 4
-date: 3 November 2023
+  - name: Barcelona Supercomputing Center (BSC)
+    index: 5
+date: 6 March 2024
 bibliography: paper.bib
 group: \#8 SMW + maSMPs
-authors_short: M. Suchánek, V. Knaisl, R. Alves, LJ. Castro, and E. Martin del Pico,
+authors_short: M. Suchánek, V. Knaisl, R. Alves, LJ. Castro, F. Psomopoulos, and E. Martin del Pico
 git_url: https://github.com/ds-wizard/bh2023-report
 event: BH2023
 ---
