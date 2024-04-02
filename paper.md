@@ -163,7 +163,7 @@ In the future, it's important to make sure that SMPs are aligned with commonly u
 
 # Acknowledgements
 
-This work was done during the [BioHackathon Europe][biohackeurope] 2023 organized by ELIXIR in October/November 2023. We thank the organizers and fellow participants. The development and operation of DSW are supported by ELIXIR CZ research infrastructure (MEYS Grant No. LM2023055).
+This work was done during the [BioHackathon Europe][biohack-europe] 2023 organized by ELIXIR in October/November 2023. We thank the organizers and fellow participants. The development and operation of DSW are supported by ELIXIR CZ research infrastructure (MEYS Grant No. LM2023055).
 
 # References
 
